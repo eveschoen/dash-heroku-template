@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Aug 11 13:15:18 2022
-
-@author: eveschoenrock
-"""
-
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
