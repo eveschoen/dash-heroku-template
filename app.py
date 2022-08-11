@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 11 13:15:18 2022
+
+@author: eveschoenrock
+"""
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -38,13 +46,9 @@ gss_clean.age = gss_clean.age.astype('float')
 
 markdown_txt = """
 **GSS Description:** https://www.gss.norc.org/About-The-GSS
-
 The General Social Survey (GSS) has been taking place for the last 50 years. It is a nationally representative survey of adults in the United States that monitors American opinions, attitudes, and behaviors by collecting information on participant demographics, behavior, attitudes, and opinions on special interest topics. Extensive research has been done to ensure that the GSS is of the highest quality, accurately representing the people of the United States. The GSS is extremely beneficial to researchers because it enables them to examine American society more closely, using data.
-
 **Article 1:** https://www.forbes.com/sites/hollycorbett/2022/03/14/what-equal-pay-day-2022-data-is-and-is-not-telling-us/?sh=475ddd1b332b
-
 Equal Pay Day, the day that marks how far into the new year a woman must work to earn what her male counterpart earned in the previous year, for 2022 fell on March 15, 8 days sooner than previous years. Although this looks like progress, there is a troubling story behind this perceived "closing" of the gender wage gap. 1.1 million women dropped from the labor force after the start of the COVID-19 pandemic, many of whom were low-paid workers that could not afford childcare during those trying times, ultimately causing the median earnings for women to rise. When these women are considered, the gender wage gap widens significantly - to almost 73 cents per every dollar a man earns. The gap is even wider for women of color. Over a lifetime of working, women can lose over a million dollars to the gender wage gap. This makes it harder for women to retire, forcing females into a state of dependency on the state or on men.
-
 **Article 2:** https://www.census.gov/library/stories/2022/03/what-is-the-gender-wage-gap-in-your-state.html#:~:text=In%202020%2C%20women%20earned%2083,gap%20is%20narrowing%20but%20continues
 """
 
@@ -159,4 +163,4 @@ app.layout = html.Div(
 )
 
 if __name__ == '__main__':
-    app.run_server(mode='inline', debug=True)
+    app.run_server(mode='inline', debug=True, port=8055)
