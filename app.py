@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 11 13:15:18 2022
+
+@author: eveschoenrock
+"""
+
 import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
@@ -123,7 +131,7 @@ fig_facet.for_each_annotation(lambda a: a.update(text=a.text.replace("prestige_c
 
 ##dashboard
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = JupyterDash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div(
     [
@@ -155,4 +163,4 @@ app.layout = html.Div(
 )
 
 if __name__ == '__main__':
-    app.run_server(mode='inline', debug=True, port=8055)
+    app.run_server(debug=True, port=8070)
